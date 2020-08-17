@@ -1,0 +1,102 @@
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <ul class="heroes cards ">
+                <li *ngFor="let hero of heroes" class="cards_item">
+                <div class="card">
+                    <div class="row">
+                <div class="card_image">
+                <img src="data:image/jpeg;base64,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"></div>
+              <div align="right"><i class="fa fa-pencil ml-3" aria-hidden="true"></i>
+            <i class="fa fa-trash  ml-2" aria-hidden="true"></i></div>  
+        </div>
+                <div class="card_content">
+            
+
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <table class="mx-auto text-left">
+                            <tbody>
+                            <tr>
+                            <td>Product ID:</td>
+                            <td style="padding-left: 2px;" align="right">{{hero.id}}</td>
+                            </tr>
+                            <tr>
+                            <td>Category:</td>
+                            <td style="padding-left: 2px;" align="right">{{hero.category}}</td>
+                            </tr>
+                            <tr>
+                          
+                            <td>Price </td>
+                            <td style="padding-left: 2px;" align="right">{{hero.price}}</td>
+                            </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <table class="mx-auto text-left">
+                            <tbody>
+                            <tr>  <td>Name</td>
+                                <td style="padding-left: 2px;" align="right">{{hero.name}}</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td style="padding-left: 2px;" align="right">{{hero.description}}</td>
+                                </tr>
+                            <tr>
+                            <td>Discount Price</td>
+                            <td style="padding-left: 2px;" align="right">{{hero.discountPrice}}</td>
+                            </tr>
+                           
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+            </div>    
+            
+
+          </div>
+        </div>
+      </li>
+      
+            
+
+   
+    </ul>
+           
+        </div>
+    </div>
+       
+
+            
+       
+ 
+
+
+
+
+
+
+  
+  <!-- button to call modal(add product) -->
+
+    <button class="float" type="button" data-toggle="modal" data-target="#ModalLong1">
+  <i class="fa fa-plus my-float"></i>
+</button>
+
+
+
+<!-- modal containing add product form    -->
+
+  <div class="modal fade" id="ModalLong1" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <app-additm></app-additm>
+      </div>
+    </div>
+  </div>
+ 

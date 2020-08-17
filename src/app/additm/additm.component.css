@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #5c5c5c;
+  padding: 0 10px;
+}
+.formbox{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0px 0px 36px rgb(0 0 0 / 20%);
+  padding: 30px;
+}
+
+.formbox .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #444443;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.formbox .form{
+  width: 100%;
+}
+
+.formbox .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.formbox .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.formbox .form .inputfield .input,
+.formbox .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+
+}
+
+.formbox .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.formbox .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+
+.formbox .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #000000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.formbox .form .inputfield .btn:hover{
+  background: #b9b9b5;
+}
+
+.formbox .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .formbox .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .formbox .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .formbox .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d1d0d0;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #d1d0d0;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #d1d0d0;
+}

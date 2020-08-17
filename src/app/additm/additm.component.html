@@ -1,0 +1,53 @@
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="formbox">
+      <div class="title">
+        Add New Product 
+      </div>
+      <div class="form">
+         <div class="inputfield">
+            <label>Product ID</label>
+            <input type="text" class="input" placeholder="ID" formControlName="id">
+         </div>  
+          <div class="inputfield">
+            <label>Category</label>
+            <input list="catg"  class="input" name="titles" id="titles" placeholder="Select or type a Category" formControlName="category">
+      <datalist id="catg">
+        <option value="Electronics">
+        <option value="Fashion">
+        <option value="Home and Furniture">
+        <option value="Food & Beverages ">
+        <option value="Groceries">
+      </datalist>
+          </div>  
+         <div class="inputfield">
+            <label>Name</label>
+            <input type="text" class="input" placeholder="Item name" formControlName="name">
+         </div>  
+        <div class="inputfield">
+            <label>Price</label>
+            <input type="text" class="input" placeholder="Price" formControlName="price">
+         </div> 
+          
+          <div class="inputfield">
+            <label>Discount Price</label>
+            <input type="text" class="input" placeholder="Optional" style="font-style: italic;" formControlName="discount">
+         </div> 
+        <div class="inputfield">
+            <label>Product Description</label>
+            <textarea class="textarea" placeholder="Enter product description" formControlName="description"></textarea>
+         </div> 
+        
+        <div class="inputfield">
+          
+            
+          <label>Upload Item Image:</label>
+          <input type="file" name="fileToUpload" id="fileToUpload" formControlName="upfile">
+              
+          
+          </div>
+          
+        <div class="inputfield">
+          <input type="submit" value="Add Item" class="btn">
+        </div>
+      </div>
+  </form>
